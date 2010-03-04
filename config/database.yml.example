@@ -1,0 +1,25 @@
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: training_development
+  username: training
+  password:
+
+test: &TEST
+  adapter: postgresql
+  encoding: unicode
+  database: training_test
+  username: training
+  password:
+
+cucumber:
+  <<: *TEST
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: training_production
+  username: training
+  password:
+
