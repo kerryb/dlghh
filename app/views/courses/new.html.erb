@@ -1,0 +1,7 @@
+<h1>Create new course</h1>
+<% form_for @course do |f| %>
+    <%= f.text_field :name, :help => "The name of the course" %>
+    <%= f.text_field :url, :help => "The URL to link to for the course" %>
+    <%= f.submit_and_cancel("save", "cancel") %>
+<% end %>
+

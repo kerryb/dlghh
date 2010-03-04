@@ -1,0 +1,10 @@
+<div id="admin">
+  <%= link_to "New course", new_course_url %>
+</div>
+
+<div id="courses">
+  <% @courses.each do |course| %>
+    <%= link_to course.name, course.url %>
+  <% end %>
+</div>
+
